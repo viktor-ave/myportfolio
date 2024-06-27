@@ -1,0 +1,121 @@
+/*  Start Home Section */
+header{
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    background: transparent;
+}
+#nav-bar button{
+    width: 180px;
+    height: 70px;
+    border: 1px solid #ed9110;
+    color: #ed9110;
+    border-radius: 5px;
+    background: #000;
+}
+#nav-bar a{
+    text-decoration: none;
+    font-size: 42px;
+    font-family: "Dancing Script", cursive;
+}
+#nav-bar{
+    margin-left: 200px;
+}
+#nav-bar button:hover{
+    color: #ed3c10;
+    background-color: #4f4e4e;
+    transition: ease 0.4s ;
+}
+.myfont{
+    font-family: "Dancing Script", cursive;
+    font-size: 42px;
+    font-weight: bolder;
+}
+.hello{
+    margin-top: 100px;
+    margin-left: 30px;
+
+}
+#home img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#home .hello{
+    position: absolute;
+    top:10vh;
+    left:6vw;
+    padding: 8px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home .intro{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+h4{
+    font-size: 30px;
+}
+#home .container .intro:nth-child(1){
+    z-index: 1;
+}
+#home .container .intro .hello:nth-child(1) h3,
+#home .container .intro .hello:nth-child(1) h4,
+#home .container .intro .hello:nth-child(1) p {
+    transform: translateY(50px);
+    filter: blur(2px);
+    opacity: 0;
+    animation: showContent 0.5s  linear 1 forwards;
+}
+@keyframes showContent {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+#home .container .intro .hello:nth-child(1) h4{
+    animation-delay: 1.2s;
+}
+#home .container .intro .hello:nth-child(1) p{
+    animation-delay: 1.4s;
+}
+/* End Home Section */
+
+/* Start About Section */
+#about .allIam{
+    position: absolute;
+    top: 100vh;
+    left:6vw;
+    padding: 8px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 100;
+}
+#about .myfont{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#about .about img{
+    position: relative;
+    object-fit: cover;
+    /* top:100vh;
+    left: 0; */
+    right: 950px;
+}
+#about b{
+    color: #ed9110;
+}
+#about h3{
+    color: #ed9110;
+}
+#about{
+    background-image: url(pc_wall/221620.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
